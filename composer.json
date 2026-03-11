@@ -1,20 +1,25 @@
 {
+  "name": "mansuriyabrij/angelone-smartapi-laravel",
+  "description": "Angel One SmartAPI Laravel SDK",
+  "type": "library",
+  "license": "MIT",
 
-    "name": "smartapi-php/angelbroking",
-    
-    "type": "library",
-    "license":"MIT",
-    "authors": [
-        {
-            "name": "Angel Broking",
-            "email": "anam@magnusideas.com"
-        }
-    ],
-    "autoload": {
-        "psr-4":{
-             "AngelBroking\\" : "/src/"
-        }
-       
-    },
-    "require": {}
+  "autoload": {
+    "psr-4": {
+      "MansuriyaBrij\\AngelOne\\": "src/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MansuriyaBrij\\AngelOne\\AngelOneServiceProvider"
+      ]
+    }
+  },
+
+  "require": {
+    "php": "^8.2",
+    "guzzlehttp/guzzle": "^7.0"
+  }
 }
